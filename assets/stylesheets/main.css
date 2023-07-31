@@ -47,3 +47,38 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* change the box-sizing to border-box. Remember, we’re going to want to include the necessary vendor prefixes for the box-sizing property,
+ as it is a relatively new property*/
+ *:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+	margin: 0 auto ;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 960px;
+}
+/*Now that all of our content is centered, let’s create some vertical spacing between elements. For starters let’s place a 22-pixel bottom margin on a few of our heading and paragraph elements.
+ We’ll place and comment on these typography styles below our grid styles.
+*/
+h1, h2, h3, h4, h5, h6, p{
+	margin-bottom: 22px;
+}
+/*We’ll want all of our buttons to have a 5-pixel border-radius.
+ They should be displayed as inline-block elements so we can add padding around all four sides without issue; 
+ we’ll remove any margin*/
+ .btn {
+	 border-radius: 5px;
+	 display: inline-block;
+	 margin: 20px;
+ }
+ .btn-alt {
+	 border: 1px solid #2c5680;
+	 padding: 10px 30px; 
+ }
+ .hero {
+padding: 22px 80px 60px 80px;
+ }
